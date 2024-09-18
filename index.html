@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="./assests/logo.png" alt="logo" />
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Acesse a plataforma</h1>
+            <p>
+              Faça login ou registre-se para começar a construir seus projetos
+              ainda hoje.
+            </p>
+
+            <form>
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Digite seu Email"
+                  required
+                />
+              </div>
+              <div class="input-wrapper">
+                <div class="label-wrapper flex">
+                  <label for="senha">Senha</label>
+                  <a href="#">Esqueceu a Senha?</a>
+                </div>
+                <input
+                  id="senha"
+                  type="password"
+                  name="password"
+                  placeholder="Digite sua Senha"
+                  required
+                />
+
+                <img
+                  onclick="togglePassword()"
+                  class="eye"
+                  src="./assests/eye-off.svg"
+                  alt=""
+                />
+                <img
+                  onclick="togglePassword()"
+                  class="eye hide"
+                  src="./assests/eye.svg"
+                  alt=""
+                />
+              </div>
+
+              <button type="submit">Entrar</button>
+
+              <div class="create-account">
+                Ainda não tem uma conta?
+                <a href="#">Inscreva-se</a>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+      <img src="./assests/img.png" alt="" />
+    </div>
+  </body>
+</html>
