@@ -201,3 +201,20 @@ form button:focus {
     padding: 4rem;
   }
 }
+
+.input span.error {
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+  border: 1px solid #ED3A5A;
+  padding: 4em;
+  
+}
+
+.error.active{
+  font-size: 14px;
+  color: #ED3A5A;
+}
